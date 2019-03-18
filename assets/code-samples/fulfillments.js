@@ -18,8 +18,8 @@ const netlifyURL = 'https://blah.netlify.com';
 
 // Handle Dialogflow intent 'welcome'.
 app.intent('welcome', (conv) => {
-  conv.ask('Hi! First things first, would you like to make a video?');
-  conv.ask(new Suggestions('Indeed', 'No thanks'));
+  conv.ask("Hi! Want to make a video?");
+  conv.ask(new Suggestions("Sure", "Nah, I'm good"));
 });
 
 // Handle Dialogflow intent 'render input'.
@@ -32,7 +32,7 @@ app.intent('render input', (conv, { renderInput }) =>
       new BasicCard({
         title: 'Fresh Rita Render',
         subtitle: 'Just for you',
-        text: 'Enjoy your personalised video',
+        text: "RITA vid at: {cacheBustedUrl}",
         image: new Image({ 
           url: 'http://blah.gif'
         }),
