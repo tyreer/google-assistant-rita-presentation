@@ -1,4 +1,8 @@
-# Spectacle Boilerplate
+# Presentation Google Assistant Rita Presentation
+
+Presentation is viewable at: http://scintillating-agreement.surge.sh/
+
+# Spectacle Readme
 
 ## Contents
 

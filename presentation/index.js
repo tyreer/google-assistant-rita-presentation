@@ -105,13 +105,19 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <Appear>
-              <ListItem textColor="primary">"Action" on Google Assistant</ListItem>
+              <ListItem textColor="primary">
+                "Action" on Google Assistant
+              </ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor="primary">Google Dialogflow (set intents)</ListItem>
+              <ListItem textColor="primary">
+                Google Dialogflow (set intents)
+              </ListItem>
             </Appear>
             <Appear>
-              <ListItem textColor="primary">Google Cloud Functions (intent fulfillment)</ListItem>
+              <ListItem textColor="primary">
+                Google Cloud Functions (fulfill intents)
+              </ListItem>
             </Appear>
             <Appear>
               <ListItem textColor="primary">RITA</ListItem>
@@ -130,18 +136,22 @@ export default class Presentation extends React.Component {
           </Link>
         </Slide>
         <Slide transition={['fade']} bgColor="tertiary">
-        <Heading size={5} textColor="primary" caps>
-        VUI to RITA
-        </Heading>
-        <List>
-          <ListItem><S type="strikethrough">"Action" on Google Assistant</S></ListItem>
-          <ListItem><S type="strikethrough">Google Dialogflow (set intents)</S></ListItem>
-          <ListItem textColor="primary">
-            Google Cloud Function (intent fulfillment)
-          </ListItem>
-          <ListItem textColor="primary">RITA</ListItem>
-        </List>
-      </Slide>
+          <Heading size={5} textColor="primary" caps>
+            VUI to RITA
+          </Heading>
+          <List>
+            <ListItem>
+              <S type="strikethrough">"Action" on Google Assistant</S>
+            </ListItem>
+            <ListItem>
+              <S type="strikethrough">Google Dialogflow (set intents)</S>
+            </ListItem>
+            <ListItem textColor="primary">
+              Google Cloud Function (fulfill intents)
+            </ListItem>
+            <ListItem textColor="primary">RITA</ListItem>
+          </List>
+        </Slide>
         <CodeSlide
           bgColor="quaternary"
           transition={['fade']}
@@ -149,7 +159,7 @@ export default class Presentation extends React.Component {
           code={fulfillment}
           ranges={[
             { loc: [0, 54],
-title: 'GOOGLE CLOUD FUNCTION' },
+              title: 'GOOGLE CLOUD FUNCTION' },
             { loc: [0, 7] },
             { loc: [8, 9] },
             { loc: [10, 12] },
@@ -159,8 +169,9 @@ title: 'GOOGLE CLOUD FUNCTION' },
             { loc: [29, 32] },
             { loc: [31, 38] },
             { loc: [38, 42] },
-            { loc: [38, 42],
-image: goodWork }
+            { loc: [47, 49] },
+            { loc: [47, 49],
+              image: goodWork }
           ]}
         />
         <Slide>
@@ -174,13 +185,18 @@ image: goodWork }
 
         <Slide transition={['fade']} bgColor="tertiary">
           <Heading size={5} textColor="primary" caps>
-          VUI to RITA
+            VUI to RITA
           </Heading>
           <List>
-            <ListItem> <S type="strikethrough">"Action" on Google Assistant</S></ListItem>
-            <ListItem> <S type="strikethrough">Google Dialogflow (set intents)</S></ListItem>
-            <ListItem> <S type="strikethrough">
-              Google Cloud Function (intent fulfillment)
+            <ListItem>
+              <S type="strikethrough">"Action" on Google Assistant</S>
+            </ListItem>
+            <ListItem>
+              <S type="strikethrough">Google Dialogflow (set intents)</S>
+            </ListItem>
+            <ListItem>
+              <S type="strikethrough">
+                Google Cloud Function (fulfill intents)
               </S>
             </ListItem>
             <ListItem textColor="primary">RITA</ListItem>
@@ -222,7 +238,7 @@ image: goodWork }
             { loc: [13, 15] },
             { loc: [25, 28] },
             { loc: [38, 42],
-title: 'FRONT END HAND OFF' }
+              title: 'FRONT END HAND OFF' }
           ]}
         />
         <Slide transition={['fade']} bgColor="tertiary">
@@ -258,7 +274,7 @@ title: 'FRONT END HAND OFF' }
           code={reactApp}
           ranges={[
             { loc: [0, 5],
-title: 'REACT APP' },
+              title: 'REACT APP' },
             { loc: [6, 7] },
             { loc: [7, 8] },
             { loc: [48, 54] },
@@ -274,7 +290,7 @@ title: 'REACT APP' },
           code={hooks}
           ranges={[
             { loc: [0, 1],
-title: './RobsStolenHooks.js' },
+              title: './RobsStolenHooks.js' },
             { loc: [16, 17] }
           ]}
         />
@@ -322,9 +338,12 @@ title: './RobsStolenHooks.js' },
         />
         <Slide>
           <Quote textColor="secondary">
-            "<S type="italic bold">You can npm install an even greater percentage of your application
-            code than before</S>... is, I think, going to be a significant selling
-            point for Hooks."
+            "
+            <S type="italic bold">
+              You can npm install an even greater percentage of your application
+              code than before
+            </S>
+            ... is, I think, going to be a significant selling point for Hooks."
           </Quote>
           <Link
             href="https://twitter.com/seldo/status/1057030727512911874"
@@ -339,7 +358,9 @@ title: './RobsStolenHooks.js' },
             REACT APP FUN
           </Heading>
           <List>
-            <ListItem><S type="strikethrough">React Hooks</S></ListItem>
+            <ListItem>
+              <S type="strikethrough">React Hooks</S>
+            </ListItem>
             <Link
               href="https://www.react-spring.io/"
               target="_blank"
@@ -357,12 +378,12 @@ title: './RobsStolenHooks.js' },
           ranges={[{ loc: [1, 2] }, { loc: [26, 31] }, { loc: [38, 48] }]}
         />
         <Slide transition={['zoom']}>
-        <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
-        RITA via Google Assistant
-      </Heading>
-      <Text margin="10px 0 0" textColor="tertiary" bold>
-      PROTOTYPE
-    </Text>
+          <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+            RITA via Google Assistant
+          </Heading>
+          <Text margin="10px 0 0" textColor="tertiary" bold>
+            PROTOTYPE
+          </Text>
           <Heading
             textAlign="left"
             margin="30px 0"
